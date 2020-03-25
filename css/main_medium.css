@@ -1,5 +1,7 @@
-header .section .inner {
-  max-width: none;
+/* HEADER */
+/* 선택자 우선순위 */
+header.section .inner {
+  max-width: none; /* 초기화 */
   height: auto;
   padding: 0 20px;
 }
@@ -15,7 +17,7 @@ header .logo {
 }
 header .main-menu {
   display: block;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 header .main-menu li {
   border-top: 1px solid #e5e5e5;
@@ -23,7 +25,6 @@ header .main-menu li {
 header .main-menu li a {
   padding: 16px 0;
 }
-
 header .sign-group {
   display: block;
   padding: 10px 0 20px;
@@ -52,13 +53,14 @@ header .sub-menu {
   margin-right: 0;
   justify-content: center;
 }
+/* 토글될 요소들만 `toggle`클래스 부여 */
 header .toggle {
   display: none;
 }
 header .toggle.on {
   display: block;
 }
-
+/* 토글 버튼 */
 #toggle-btn {
   display: block;
 }
@@ -68,17 +70,15 @@ header .toggle.on {
   background-image: url("../img/bg-small.jpg");
 }
 .section--visual .inner {
-  display: block;
   max-width: none;
   padding: 80px 20px;
+  display: block;
 }
-
 .section--visual .summary {
   text-align: center;
   margin-right: 0;
   margin-bottom: 50px;
 }
-
 #sign-form {
   width: auto;
   max-width: 500px;
@@ -89,15 +89,27 @@ header .toggle.on {
 .section--feature .summary {
   padding: 66px 20px 0 20px;
 }
-.section--feature .tiles li {
-  width: 50%;
+/* Float을 사용한 방법 */
+.section--feature .tiles ul {
 }
+.section--feature .tiles li {
+  max-width: 50%;
+}
+/* Grid를 사용한 방법 */
+/*
+    .section--feature .tiles ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .section--feature .tiles li {}
+  */
 .section--feature .tiles li:nth-child(2) {
   border-right: none;
 }
 .section--feature .tiles li img {
   padding: 14px 30% 24px;
 }
+
+/* WHERE IS GITHUB */
 .section--where-is .inner {
   max-width: none;
   padding: 80px 20px 0 20px;
@@ -116,7 +128,6 @@ header .toggle.on {
 footer .inner {
   padding: 50px 20px;
 }
-
 footer .logo {
   display: none;
 }
