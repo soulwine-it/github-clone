@@ -40,6 +40,7 @@
   </head>
   <body>
     <div class="body__container">
+      <!-- Header -->
       <header class="section">
         <div class="inner clearfix">
           <div class="menu-group float--left">
@@ -76,6 +77,62 @@
           </div>
         </div>
       </header>
+
+      <!-- visual section -->
+      <section class="section section--visual">
+        <div class="inner">
+          <div class="summary">
+            <div class="summary__title">
+              How&nbsp;people build&nbsp;software
+            </div>
+            <div class="summary__description">
+              Millions of developers use GitHub to build personal projects,
+              support their businesses, and&nbsp;work together on open source
+              technologies.
+            </div>
+          </div>
+          <form id="sign-form" method="POST" action="">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  class="input--text"
+                  placeholder="Pick a username"
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  class="input--text"
+                  placeholder="Your email address"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="input--text"
+                  placeholder="Create a password"
+                />
+                <p class="caption">
+                  Use at least one letter, one numeral, and seven characters.
+                </p>
+              </li>
+              <li>
+                <input
+                  type="submit"
+                  class="btn btn--primary"
+                  value="Sign up for Github"
+                />
+                <p class="caption">
+                  By clicking "Sign up for GitHub", you agree to our terms of
+                  service and privacy policy. We'll occasionally send you
+                  account related emails.
+                </p>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
